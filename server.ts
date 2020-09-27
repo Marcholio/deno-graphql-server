@@ -5,8 +5,14 @@
 
 import { serve } from "./deps.ts";
 
-const server = serve({ hostname: "0.0.0.0", port: 8080 });
-console.log(`HTTP webserver running.  Access it at:  http://localhost:8080/`);
+const port = Number(Deno.env.get("PORT")) || 8080;
+
+const hostname = "0.0.0.0";
+
+const server = serve({ hostname, port });
+console.log(
+  `HTTP webserver running.  Access it at:  http://${hostname}:${port}/`
+);
 
 for await (const request of server) {
   let bodyContent = "Your user-agent is:\n\n";
