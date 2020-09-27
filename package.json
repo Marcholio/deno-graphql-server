@@ -1,0 +1,10 @@
+{
+  "name": "deno-server",
+  "version": "1.0.0",
+  "description": "Deno web server",
+  "scripts": {
+    "start": "./start.sh"
+  },
+  "author": "Markus Tyrkkö",
+  "license": "ISC"
+}
