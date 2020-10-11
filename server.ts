@@ -1,22 +1,19 @@
-/**
- * Simple web server copied from Deno examples:
- * https://deno.land/manual/examples/http_server
- */
+import { Application, applyGraphQL, Router } from "./deps.ts";
 
-import { serve } from "./deps.ts";
+import { typeDefs, resolvers} from './graphql.ts';
 
 const port = Number(Deno.env.get("PORT")) || 8080;
 
 const hostname = "0.0.0.0";
 
-const server = serve({ hostname, port });
+const app = new Application();
+
+const GraphQLService = await applyGraphQL<Router>({ Router, typeDefs, resolvers })
+
+app.use(GraphQLService.routes(), GraphQLService.allowedMethods())
+
 console.log(
-  `HTTP webserver running.  Access it at:  http://${hostname}:${port}/`
+  `GraphQL server running. Access it at:  http://${hostname}:${port}/`,
 );
 
-for await (const request of server) {
-  let bodyContent = "Your user-agent is:\n\n";
-  bodyContent += request.headers.get("user-agent") || "Unknown";
-
-  request.respond({ status: 200, body: bodyContent });
-}
+await app.listen({ port })
