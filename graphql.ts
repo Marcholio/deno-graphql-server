@@ -2,10 +2,41 @@ import { GQLError } from "https://deno.land/x/oak_graphql@0.6.2/mod.ts";
 import { gql, uuidV4 } from "./deps.ts";
 import type { Item, List, ListWithItems } from "./types.ts";
 
-const items: Record<string, Omit<Item, "id">> = {};
+// In-memory storage is sufficient for testing purposes
+let items: Record<string, Omit<Item, "id">> = {};
+let lists: Record<string, Omit<List, "id">> = {};
 
-const lists: Record<string, Omit<List, "id">> = {
-  [uuidV4.generate()]: { title: "Todo list #1", items: [] },
+const populateStorage = () => {
+  // Generate lists without items
+  lists = [...new Array(3)].map((a, i) => uuidV4.generate())
+    .reduce(
+      (acc, cur, i) => ({
+        ...acc,
+        [cur]: {
+          title: `Todo list #${i + 1}`,
+          items: [],
+        },
+      }),
+      {},
+    );
+
+  // Generate some items
+  items = [...new Array(10)].map((a, i) => uuidV4.generate()).reduce(
+    (acc, cur, i) => ({
+      ...acc,
+      [cur]: { title: `Task #${i + 1}`, done: Math.random() < 0.3 },
+    }),
+    {},
+  );
+
+  const listKeys = Object.keys(lists);
+
+  // Randomly assign each item to some list
+  Object.keys(items).forEach((itemId) =>
+    lists[listKeys[Math.floor(Math.random() * listKeys.length)]].items.push(
+      itemId,
+    )
+  );
 };
 
 export const typeDefs = gql`
@@ -30,6 +61,14 @@ export const typeDefs = gql`
     title: String!
   }
 
+  type ResetResponse {
+    status: String!
+  }
+
+  input ResetInput {
+    _: Boolean
+  }
+
   input ToggleItemInput {
     itemId: String!
   }
@@ -42,6 +81,7 @@ export const typeDefs = gql`
     createItem (input: CreateItemInput): Item
     createList (input: CreateListInput): List
     toggleItemDone (input: ToggleItemInput): Item
+    reset (input: ResetInput): ResetResponse
   }
 `;
 
@@ -120,6 +160,11 @@ export const resolvers = {
       items[input.itemId] = newItem;
 
       return { id: input.itemId, ...newItem };
+    },
+
+    reset: () => {
+      populateStorage();
+      return { status: "OK" };
     },
   },
 };
