@@ -19,7 +19,7 @@ app.use(async (ctx, next) => {
   ctx.response.headers.set(
     "Access-Control-Allow-Origin",
     Deno.env.get("MODE") === "PRODUCTION"
-      ? "https://marcholio.github.io/vue-todo"
+      ? "https://marcholio.github.io"
       : "http://localhost:8080",
   );
   ctx.response.headers.set("Content-Type", "application/json");
