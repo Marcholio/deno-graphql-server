@@ -18,7 +18,7 @@ const GraphQLService = await applyGraphQL<Router>({
 app.use(async (ctx, next) => {
   ctx.response.headers.set(
     "Access-Control-Allow-Origin",
-    Deno.env.get("MODE") === "production"
+    Deno.env.get("MODE") === "PRODUCTION"
       ? "https://marcholio.github.io/vue-todo"
       : "http://localhost:8080",
   );
