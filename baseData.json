@@ -1,0 +1,171 @@
+{
+  "lists": {
+    "49b3dbf9-2617-4133-aaae-d4b424e8f291": {
+      "title": "Shopping list",
+      "items": [
+        "bf63be6e-dd4a-41c0-8b1b-9d49462c71af",
+        "7d70e58a-5975-4bb6-aeb0-564a75ccf069",
+        "5a1ff6a8-c1dc-4e76-b8f7-566b60c33d9a",
+        "1909625d-7629-4248-bc2e-6bd80ddfbc40",
+        "eda8d3cd-7289-4ee0-aab1-5e02f9b34ed6",
+        "7abefbe3-303e-4c81-bc2b-c76c26475851",
+        "5d3af2a8-aca7-4288-a841-3296adacb736",
+        "5ef079ea-22c2-4f5c-9a9a-392f4b739071",
+        "f7ebde31-c3c9-41ae-adaa-7f7e6b160709",
+        "ede7d80c-99d6-45c2-bdf8-5cdb713d3b77"
+      ]
+    },
+    "021745a1-cb30-4f56-b939-5718c05c2cb7": {
+      "title": "Things to learn",
+      "items": [
+        "ea0c1bc7-5f3c-4bff-a667-3013ec4bec9c",
+        "4b639477-4cc1-429a-8631-03e7ae442e54",
+        "795a37b6-b454-42d0-9ec1-b2e55eedfbf8",
+        "a2c6b269-d3c5-4555-a172-c97f816616b5"
+      ]
+    },
+    "cdde27bb-39a6-49cf-8230-a56a4354e567": {
+      "title": "Daily tasks",
+      "items": [
+        "871f4b13-277e-43ed-8297-bbea40796817",
+        "37c20375-f257-4adb-84a5-119ddff14c40",
+        "4b2a54cc-a990-4612-a3e5-515e3cb828f1",
+        "61a86fd7-0b76-4385-98a2-f3ec48094886",
+        "8e94f13b-e777-4b95-8061-eef65e61a531",
+        "25148719-be1d-412b-9c7e-c2c23d8b697a"
+      ]
+    },
+    "3d9ce650-5a57-48bd-b152-966dbc785f9e": {
+      "title": "Weekly tasks",
+      "items": [
+        "ca349165-2dbe-40c0-a1f9-cb8e213354f5",
+        "10022cad-eaf3-41ac-9adf-189f0014deb4",
+        "b6b2cf94-53ac-478b-8a1d-cfd53301814f",
+        "f254acb0-f3af-413c-8920-9de57d20e80e",
+        "e3fcb296-e590-46a4-b25c-03aae2c2f85b",
+        "4084fbfb-be0d-4ed0-baa7-679dca26c093",
+        "1b02b557-9583-4958-be35-cd31fc8ea831",
+        "14b12de4-06e2-4196-bad0-d4217a881cd9"
+      ]
+    }
+  },
+  
+  "items": {
+    "bf63be6e-dd4a-41c0-8b1b-9d49462c71af": {
+      "title": "Bananas",
+      "done": false
+    },
+    "7d70e58a-5975-4bb6-aeb0-564a75ccf069": {
+      "title": "Beer",
+      "done": false
+    },
+    "5a1ff6a8-c1dc-4e76-b8f7-566b60c33d9a": {
+      "title": "Bread",
+      "done": false
+    },
+    "1909625d-7629-4248-bc2e-6bd80ddfbc40": {
+      "title": "Apples",
+      "done": false
+    },
+    "eda8d3cd-7289-4ee0-aab1-5e02f9b34ed6": {
+      "title": "Milk",
+      "done": false
+    },
+    "7abefbe3-303e-4c81-bc2b-c76c26475851": {
+      "title": "Coffee",
+      "done": false
+    },
+    "5d3af2a8-aca7-4288-a841-3296adacb736": {
+      "title": "Hand sanitizer",
+      "done": false
+    },
+    "5ef079ea-22c2-4f5c-9a9a-392f4b739071": {
+      "title": "Chocolate",
+      "done": false
+    },
+    "f7ebde31-c3c9-41ae-adaa-7f7e6b160709": {
+      "title": "Eggs",
+      "done": false
+    },
+    "ede7d80c-99d6-45c2-bdf8-5cdb713d3b77": {
+      "title": "Salmon",
+      "done": false
+    },
+    "ea0c1bc7-5f3c-4bff-a667-3013ec4bec9c": {
+      "title": "Vue.js",
+      "done": true
+    },
+    "4b639477-4cc1-429a-8631-03e7ae442e54": {
+      "title": "Deno",
+      "done": true
+    },
+    "795a37b6-b454-42d0-9ec1-b2e55eedfbf8": {
+      "title": "GraphQL",
+      "done": true
+    },
+    "a2c6b269-d3c5-4555-a172-c97f816616b5": {
+      "title": "GitHub actions",
+      "done": true
+    },
+    "871f4b13-277e-43ed-8297-bbea40796817": {
+      "title": "Wake up",
+      "done": true
+    },
+    "37c20375-f257-4adb-84a5-119ddff14c40": {
+      "title": "Challenge yourself",
+      "done": false
+    },
+    "4b2a54cc-a990-4612-a3e5-515e3cb828f1": {
+      "title": "Learn something new",
+      "done": true
+    },
+    "61a86fd7-0b76-4385-98a2-f3ec48094886": {
+      "title": "Relax",
+      "done": false
+    },
+    "8e94f13b-e777-4b95-8061-eef65e61a531": {
+      "title": "Do something useful",
+      "done": true
+    },
+    "f0dc80c9-189c-4791-ae71-7871dc43ad90": {
+      "title": "Thank someone for a job well done",
+      "done": false
+    },
+    "25148719-be1d-412b-9c7e-c2c23d8b697a": {
+      "title": "Improve something",
+      "done": false
+    },
+    "ca349165-2dbe-40c0-a1f9-cb8e213354f5": {
+      "title": "Laundry",
+      "done": true
+    },
+    "10022cad-eaf3-41ac-9adf-189f0014deb4": {
+      "title": "Gym",
+      "done": true
+    },
+    "b6b2cf94-53ac-478b-8a1d-cfd53301814f": {
+      "title": "Plan next week",
+      "done": false
+    },
+    "f254acb0-f3af-413c-8920-9de57d20e80e": {
+      "title": "Groceries",
+      "done": false
+    },
+    "e3fcb296-e590-46a4-b25c-03aae2c2f85b": {
+      "title": "Outdoor activities",
+      "done": false
+    },
+    "4084fbfb-be0d-4ed0-baa7-679dca26c093": {
+      "title": "Develop hobby projects",
+      "done": true
+    },
+    "1b02b557-9583-4958-be35-cd31fc8ea831": {
+      "title": "Check blogs",
+      "done": false
+    },
+    "14b12de4-06e2-4196-bad0-d4217a881cd9": {
+      "title": "Debug broken projects",
+      "done": false
+    }
+  }
+}
