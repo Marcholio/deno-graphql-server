@@ -12,7 +12,6 @@ const populateStorage = () => {
       "./baseData.json",
     ));
 
-  console.log(baseData);
   lists = baseData.lists;
   items = baseData.items;
 };
