@@ -1,5 +1,4 @@
 {
-  "http://deno.land/x/oak_graphql/mod.ts": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "https://cdn.pika.dev/-/graphql@v15.0.0-KZBXeLwp7DcGGGn15gbf/dist=es2019,mode=types/error/GraphQLError.d.ts": "aa0d285b36b47fb1f100d69c8f8943a21e6936ab94a9b5980b6f41fc0857f0ea",
   "https://cdn.pika.dev/-/graphql@v15.0.0-KZBXeLwp7DcGGGn15gbf/dist=es2019,mode=types/error/formatError.d.ts": "cdaad07cbbae178884d9145c9682d43ab0fac4cbf993ff58fc338ec5e0ac1cf9",
   "https://cdn.pika.dev/-/graphql@v15.0.0-KZBXeLwp7DcGGGn15gbf/dist=es2019,mode=types/error/index.d.ts": "190cf062145a81e0d5e9bdc896cc4288ca6df147623aec4b0a8e2010c4ca3a0f",
@@ -156,7 +155,6 @@
   "https://deno.land/x/media_types@v2.5.1/db.ts": "c040d9bd1524b90c1cfa126858e1a4ba432aa0ab935a568656d52091113af069",
   "https://deno.land/x/media_types@v2.5.1/deps.ts": "68fde75eb84fa0f3d0d243988fd5a9e41281911adde04473c2af8854100370b2",
   "https://deno.land/x/media_types@v2.5.1/mod.ts": "681a629cff2ffa493b2779bffce163f81732678938db6d970709d34625e6b2d6",
-  "https://deno.land/x/oak/mod.ts": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "https://deno.land/x/oak@v6.3.1/application.ts": "b82275abfcb1ca31125b7400beebe9c86c5b6d3609bb2a233cd472410c07a8c0",
   "https://deno.land/x/oak@v6.3.1/body.ts": "036c1e3cf54d1cae24b18bf5c2287ab930cd230c474b86fb6f6fade1ccf811ec",
   "https://deno.land/x/oak@v6.3.1/buf_reader.ts": "ced6a04ac8f529a18e1e85182ffe0cf82ee9477e1a8f5441a02e923f62bebc54",
