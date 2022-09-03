@@ -1,5 +1,7 @@
 # Deno GraphQL server
 
+This no longer works because Heroku disabled free dynos.
+
 This is a server that is done using [Deno](https://deno.land/) and [GraphQL](https://graphql.org/).
 It acts as a backend for [Vue.js TODO Application](https://github.com/Marcholio/vue-todo).
 
